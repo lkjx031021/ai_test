@@ -7,7 +7,7 @@ from langgraph.graph import add_messages
 from langchain_deepseek import ChatDeepSeek
 from langchain_ollama import ChatOllama
 
-from agents.utils import save_graph
+from utils import save_graph
 
 class Contact(TypedDict):
     name: str
@@ -32,6 +32,8 @@ def llm_node(State: InputState):
         {'role': 'system', 'content': 'You are a helpful assistant.'},
     ] + State['message']
     print(messages)
+    print('---- ')
+    print(State)
     # messages = [
     #     ("system","你是一位乐于助人的智能小助理",),
     #     ("human", State["message"])
@@ -63,4 +65,4 @@ print(a)
 # print(chat_model.content)
 from IPython.display import Image, display
 
-save_graph(graph, "graph_single_agent.png")
+# save_graph(graph, "graph_single_agent.png")
