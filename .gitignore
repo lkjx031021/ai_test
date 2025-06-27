@@ -1,0 +1,57 @@
+# 忽略操作系统自动生成的文件
+.DS_Store          # macOS 的文件夹属性文件
+Thumbs.db          # Windows 缩略图缓存
+desktop.ini        # Windows 文件夹配置
+
+# 忽略编辑器/IDE 生成的文件
+.vscode/           # VS Code 配置
+.idea/             # JetBrains IDE (IntelliJ, PyCharm, WebStorm 等)
+*.swp              # Vim 临时文件
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# 忽略 Node.js 依赖
+node_modules/      # npm/yarn/pnpm 安装的依赖
+
+# 忽略 Python 相关文件
+__pycache__/       # Python 字节码缓存
+*.py[cod]          # 编译后的 Python 文件
+*.so               # C 扩展
+*.egg-info/        # Python 包元数据
+venv/              # Python 虚拟环境
+env/
+.python-version    # Python 版本管理工具（如 pyenv）
+
+# 忽略 Java 编译输出
+*.class
+*.jar
+*.war
+*.ear
+target/            # Maven 构建目录
+bin/               # Eclipse 编译输出
+
+# 忽略日志文件
+*.log
+logs/
+
+# 忽略构建/打包输出
+dist/              # 打包后的文件（如 npm, Python, Go 等）
+build/             # 编译后的二进制文件
+out/               # 一些工具的输出目录（如 TypeScript）
+release/           # 发布版本
+
+# 忽略环境变量文件
+.env               # 敏感信息（如 API 密钥、数据库密码）
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 忽略缓存目录
+.cache/
+.temp/
+
+# 忽略系统文件
+*.bak              # 备份文件
+*.tmp              # 临时文件
